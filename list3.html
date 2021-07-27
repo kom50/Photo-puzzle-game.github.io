@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Photo Puzzle Game</title>
+    <link rel="stylesheet" type="text/css" href="puzzle/puzzleStyles.css">
+    <script type="text/javaScript" src="puzzle/puzzleScript.js"></script>
+</head>
+
+<body>
+    <h3 class='header'> Photo Puzzle Game </h3>
+    <div class='first-container'>
+        <div id="toggle" title="Show boxes number">
+            <div id="move" title="Show boxes number" onclick="clickButton()"></div>
+        </div>
+        <p id="moveLabel" title="Total moves">Moves : 0</p>
+    </div>
+    <div class='container' id="main">
+        <div class='items' > <img alt="1" src="list3/1.jpg"> <span class="number"> 1 </span> </div>
+        <div class='items' > <img alt="2" src="list3/2.jpg"> <span class="number"> 2 </span> </div>
+        <div class='items' > <img alt="3" src="list3/3.jpg"> <span class="number"> 3 </span> </div>
+        <div class='items' > <img alt="4" src="list3/4.jpg"> <span class="number"> 4 </span> </div>
+        <div class='items' > <img alt="5" src="list3/5.jpg"> <span class="number"> 5 </span></div>
+        <div class='items' > <img alt="6" src="list3/6.jpg"> <span class="number"> 6 </span> </div>
+        <div class='items' > <img alt="7" src="list3/7.jpg"> <span class="number"> 7 </span></div>
+        <div class='items' > <img alt="8" src="list3/8.jpg"> <span class="number"> 8 </span> </div>
+        <div class='items' > <img alt="9" src="list3/9.jpg"> <span class="number"> 9 </span></div>
+        <div  id="full" > <img alt="full" src="list3/full.jpg"></div>
+        <div  id="countDown" > </div>
+    </div>
+    <div class="button-container">
+        <img width = '30' height ='30' id="restart" title="Restart" src="puzzle/restart.png" >
+        <img id="view" title="Show full image for hints" src="puzzle/view.png" >
+    </div>
+    <p id="msg">  </p>
+    <marquee direction="left">Developed By : Om prakash kumar</marquee>
+</body>
+
+</html>

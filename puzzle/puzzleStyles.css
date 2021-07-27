@@ -1,0 +1,145 @@
+@import './toggleButton.css';
+@import './styles.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant: small-caps;
+    color: var(--bs-indigo);
+    font-weight: bold;
+    user-select: none;
+}
+
+.header {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: red;
+    background-image: linear-gradient(45deg,#ff00f4, #ad22fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 96%;
+    margin: auto;
+    margin-top: 3px;
+    border-radius: 10px / 10px;
+
+    text-shadow: 1px 5px 10px gray;
+    box-shadow: 0 0 15px 3px  gray;
+}
+
+.container {
+    height: 307px;
+    width: 307px;
+    margin: auto;
+    border: 2px solid var(--bs-primary);
+    position: relative;
+    top: 120px;
+
+}
+
+.container div {
+    position: absolute;
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: all 0.1s linear;
+    /* background-color: rgb(228, 160, 160); */
+}
+
+
+.container div span {
+    color: var(--bs-cyan);
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.items img:hover{
+    /* border : 1px solid gray; */
+    opacity: .8;
+}
+.first-container {
+    position: relative;
+    top: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.button-container {
+    height: 30px;
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+marquee {
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 0px;
+    
+}
+
+#msg {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 140px;
+
+    /* display: none; */
+}
+
+#full {
+    display: none;
+    z-index: 1;
+}
+
+.number {
+    display: none;
+    user-select: none;
+}
+
+#countDown{
+    width: 99.2%;
+    height: 99.2%;
+    z-index: 1;
+    font-size:  10rem;
+    font-weight:  bolder;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 1s infinite;
+    -webkit-animation: animate 1s infinite;
+}   
+
+#restart:active{
+    transform: rotate(180deg);
+
+}
+@keyframes animate {
+    to{ 
+        font-size: 0rem;
+    }
+    from{
+        font-size: 10rem;
+
+    }
+}
