@@ -50,12 +50,12 @@ window.addEventListener('load', (event) => {
 		}, 2000);
 	})
 
-	document.querySelector('#restart').addEventListener('click',(event)=>{
+	document.querySelector('#restart').addEventListener('click', (event) => {
 		refresh();
 	})
 	// console.log(boxes)
 	// add Event on boxes
-	boxes.forEach((box) =>{
+	boxes.forEach((box) => {
 		box.addEventListener('click', function (event) {
 				x = box.offsetLeft;
 				y = box.offsetTop;
@@ -71,7 +71,7 @@ window.addEventListener('load', (event) => {
 				}
 				// win function call
 				win();
-			}  // AddEventListener end
+			} // AddEventListener end
 		)
 	}) // forEach end
 }) // Window end
@@ -99,6 +99,7 @@ function refresh() {
 
 //  Generates random index values
 let randIndex = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+
 function randomIndex() {
 	let m = 0;
 	while (true) {
